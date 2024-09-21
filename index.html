@@ -81,7 +81,7 @@
       const progressTime = document.getElementById("progressTime");
 
       function playAudio() {
-        audio.play().then(() => {
+        document.getElementById("myAudio").play().then(() => {
           debugElement.textContent = "Audio playing successfully";
           updateProgress();
         }).catch(e => {
